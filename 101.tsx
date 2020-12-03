@@ -41,4 +41,6 @@ function main(): void {
     console.log(sum);
 }
 
-main();
+// I had to put this here so the namespaces don't collide, but in order to run via
+// command line you have to comment this out
+export default {};

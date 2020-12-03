@@ -1,9 +1,13 @@
+# data files
+*.txt
+
 # emacs
 *~
 
 tsconfig.json
 *.js
 *.js.map
+node_modules/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

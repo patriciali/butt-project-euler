@@ -1,0 +1,21 @@
+{
+  "name": "butt-project-euler",
+  "version": "1.0.0",
+  "description": "project euler solutions, under my new username, \"butt\"",
+  "main": "101.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriciali/butt-project-euler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patriciali/butt-project-euler/issues"
+  },
+  "homepage": "https://github.com/patriciali/butt-project-euler#readme"
+}
