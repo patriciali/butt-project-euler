@@ -1,9 +1,8 @@
-_reverseList :: [a] -> [a]
-_reverseList [] = []
-_reverseList (x:xs) = (_reverseList xs) ++ [x]
-
 isPalindrome :: Int -> Bool
-isPalindrome n = _reverseList (show n) == show n
+isPalindrome n = reverseList nStringified == nStringified
+    where nStringified = show n
+          reverseList [] = []
+          reverseList (x:xs) = (reverseList xs) ++ [x]
 
 maxElement :: Ord a => [a] -> a
 maxElement (x:[]) = x
