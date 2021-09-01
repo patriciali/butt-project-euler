@@ -1,6 +1,7 @@
 lcmList :: [Int] -> Int
 lcmList xs = reduce xs lcm 1
-    where lcm p q = find isDivisibleByQ [p, 2*p ..]
+    where lcm :: Int -> Int -> Int
+          lcm p q = find isDivisibleByQ [p, 2*p ..]
               where find :: (a -> Bool) -> [a] -> a
                     find propertyFunc [] = error "no element found which satisfies the property"
                     find propertyFunc (x:xs)
