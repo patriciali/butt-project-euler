@@ -11,7 +11,7 @@ isNotDivisibleByAnyOf (x:xs) p
     | otherwise = isNotDivisibleByAnyOf xs p
 
 prependNextPrime :: [Int] -> [Int]
-prependNextPrime xs = (patriciaFind (isNotDivisibleByAnyOf xs) [largestElement + 2, largestElement + 4 ..]):xs
+prependNextPrime xs = (patriciaFind (isNotDivisibleByAnyOf (reverse xs)) [largestElement + 2, largestElement + 4 ..]):xs
     where largestElement = xs !! 0
 
 applyNTimes :: (a -> a) -> Int -> a -> a
